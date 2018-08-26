@@ -1,0 +1,19 @@
+<html>
+<body>
+<form id="frm">
+    Enter your Name : <input type="text" id="name"/><br/>
+     Enter your age : <input type="text" id="age"/><br/>
+    <input type = "submit" id="submit" value="submit"/>
+</form>  
+    <script>
+    document.getElementById("submit").addEventListener("click" ,handleButton);
+        
+        function handleButton(e){
+            alert("Confirmation pages...");
+            e.preventDefault();
+            var len = document.getElementById("frm").elements.length;
+            console.log(len);
+        }
+    </script>
+</body>
+</html>
